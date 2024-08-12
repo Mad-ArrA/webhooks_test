@@ -41,7 +41,8 @@ def webhook():
 
 @app.route('/')
 def index():
-    return 'Webhook is active. Please send data to /webhook endpoint.', 200, data
+    print(f"Received data: {data}")
+    # return 'Webhook is active. Please send data to /webhook endpoint.', 200
 
 if __name__ == '__main__':
     app.run()
